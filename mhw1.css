@@ -1,0 +1,198 @@
+body{
+  margin:0;
+}
+
+#background{
+  background-image: url(https://tse2.mm.bing.net/th?id=OIP.U82aXKzpSBgnuNHn6GQv9wHaEK&pid=Api&P=0);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  position: relative;
+
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#overlay{
+  background-color: rgba(0, 0, 0, .3);
+  position:absolute;
+  top:0;
+  bottom:0;
+  height: 100%;
+  width: 100%;
+}
+
+header nav{
+ position:absolute;
+ top:0;
+ right:0;
+
+ padding: 25px;
+ font-size: 16px;
+}
+
+#links a{
+  color:ghostwhite;
+
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
+  text-decoration: none;
+  padding: 2px;
+  font-style: normal;
+  }
+
+#links a:hover{
+  color:azure;
+  text-decoration: underline;
+}
+
+#sigla{
+  max-width: 780px;
+  font-size: 40px;
+  font-style: normal;
+  font-family: 'Open Sans', sans-serif;
+  color: whitesmoke;
+  font-weight: lighter;
+  z-index: 1;
+}
+
+#top{
+  display:flex;
+  justify-content: center;
+  position: relative;
+  
+  font-size: 16px;
+  font-style: normal;
+  color: black;
+}
+
+#top img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  
+  position: absolute;
+  top: -50px;
+}
+
+#top h2{
+  position: absolute;
+  top: 30px;
+
+  font-family: 'Ubuntu' ,Georgia;
+  letter-spacing: .9px;
+}
+
+#top p{
+  position: absolute;
+  top: 65px;
+
+  font-family: 'Nunito',Cambria;
+  font-style: oblique;
+}
+
+#section{
+  margin-top: 125px;
+}
+
+#contents{
+  background-color: rgb(236, 243, 252);
+  border: 1px solid white;
+  border-radius: 4%;
+
+  font-size: 18px;
+  font-style: normal;
+}
+
+div.article{
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 120px;
+  color: black;
+}
+
+div.article a{
+  text-decoration: none;
+  color:rgb(4, 4, 37);
+}
+
+div.article a:visited{
+  text-decoration: none;
+  color:rgb(0, 0, 67);
+}
+
+div.article h1{
+  font-family: 'Ubuntu',Georgia;
+  color:rgb(4, 4, 37);
+}
+
+div.article p{
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  font-size: 1.02em;
+  font-family: 'Nunito',Cambria;
+  line-height: 1.5em;
+}
+
+div.box{
+  width: 66.67%;
+  margin-left: 40px;
+}
+
+div.box img{
+  max-width: 100%;
+  border-radius: 3%;
+}
+
+#end{
+  margin-top: 20px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+
+  background-color: rgb(4, 4, 37);
+}
+
+#end p{
+  font-style: oblique;
+  font-family: 'Nunito',Cambria;
+  font-size: medium;
+  color: azure;
+}
+
+@media (max-width: 780px) {
+  
+  #sigla{
+    max-width: 400px;
+    font-size: 35px;
+    margin: 0 10% 0 15%;
+  }
+
+  
+  header nav{
+    top:0;
+    left: 23%;
+    right: 20%;
+  }
+
+  #links a{
+    padding: 4px;
+  }
+
+  #top {
+    font-size: 90%;
+  }
+
+  #contents{
+    font-size: 95%;
+  }
+
+  #end{
+    font-size: 90%;
+  }
+}
